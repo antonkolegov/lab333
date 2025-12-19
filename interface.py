@@ -57,7 +57,7 @@ def handle_length_conversion():
     value, from_unit, to_unit = get_conversion_input('length')
     try:
         result = LengthConverter.convert(value, from_unit, to_unit)
-        print(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
+        print(f" {value} {from_unit} = {result:.6f} {to_unit}")
     except ValueError as e:
         print(f" Ошибка: {e}")
 
@@ -96,7 +96,7 @@ def handle_settings():
 
 def run_ui():
     """Запускает цикл пользовательского интерфейса."""
-    print("🚀 Запуск конвертера...")
+    print(" Запуск конвертера...")
 
     while True:
         print_menu()
